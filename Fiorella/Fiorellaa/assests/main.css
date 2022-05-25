@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+.navigationbar {
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav img {
+  height: 25px;
+  width: 205px;
+  z-index: 99;
+}
+
+.bar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.bar ul li a {
+  text-decoration: none;
+  color: gray;
+  font: 12px,Montserrat,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sub-home ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sub-home ul li a:hover::after {
+  width: 100%;
+}
+
+.sub-home {
+  display: none;
+}
+
+.bar ul li:hover .sub-home {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-top: 15px;
+  margin-left: -40px;
+}
+
+.bar ul li:hover .sub-home ul {
+  display: block;
+  margin: 10px;
+}
+
+.bar ul li:hover .sub-home li {
+  padding-top: 10px;
+}
+
+.sub-pages {
+  display: none;
+}
+
+.bar ul li:hover .sub-pages {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-top: 15px;
+  margin-left: -40px;
+}
+
+.bar ul li:hover .sub-pages ul {
+  display: block;
+  margin: 10px;
+}
+
+.bar ul li:hover .sub-pages li {
+  padding-top: 10px;
+}
+
+.bar ul li .sub-shop {
+  display: none;
+}
+
+.bar ul li:hover .sub-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar ul li .sub-product {
+  position: absolute;
+  width: 25%;
+  background-color: white;
+  padding-top: 20px;
+  margin-left: -700px;
+}
+
+.bar ul li .sub-product ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px;
+}
+
+.bar ul li .sub-product li {
+  display: block;
+  padding-top: 10px;
+}
+
+.bar ul li .sub-shop-pages {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  padding-top: 20px;
+  margin-left: -400px;
+}
+
+.bar ul li .sub-shop-pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px;
+}
+
+.bar ul li .sub-shop-pages li {
+  display: block;
+  padding-top: 10px;
+}
+
+.bar ul li .sub-shop-types {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  padding-top: 20px;
+  margin-left: -100px;
+}
+
+.bar ul li .sub-shop-types ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px;
+}
+
+.bar ul li .sub-shop-types li {
+  display: block;
+  padding-top: 10px;
+}
+
+.bar ul li .sub-shop-layout {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  padding-top: 20px;
+  margin-left: 150px;
+}
+
+.bar ul li .sub-shop-layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px;
+}
+
+.bar ul li .sub-shop-layout li {
+  display: block;
+  padding-top: 10px;
+}
+
+.sub-portfolio {
+  display: none;
+}
+
+.bar ul li:hover .sub-portfolio {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-top: 15px;
+  margin-left: -40px;
+}
+
+.bar ul li:hover .sub-portfolio ul {
+  display: block;
+  margin: 10px;
+}
+
+.bar ul li:hover .sub-portfolio li {
+  padding-top: 10px;
+}
+
+.sub-port-layouts {
+  display: none;
+}
+
+#layouts:hover .sub-port-layouts {
+  display: block;
+  position: absolute;
+  width: 205px;
+  background-color: white;
+  margin-top: -38px;
+  margin-left: 210px;
+}
+
+#layouts:hover .sub-port-layouts li {
+  padding-top: 10px;
+}
+
+.sub-port-single {
+  display: none;
+}
+
+#single:hover .sub-port-single {
+  display: block;
+  width: 185px;
+  position: absolute;
+  background-color: white;
+  margin-top: -35px;
+  margin-left: 205px;
+}
+
+#single:hover .sub-port-single li {
+  padding-top: 10px;
+}
+
+.sub-blog {
+  display: none;
+}
+
+.bar ul li:hover .sub-blog {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-top: 15px;
+  margin-left: -40px;
+}
+
+.bar ul li:hover .sub-blog ul {
+  display: block;
+  margin: 10px;
+}
+
+.bar ul li:hover .sub-blog li {
+  padding-top: 10px;
+}
+
+.sub-post {
+  display: none;
+}
+
+#post:hover .sub-post {
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: -40px;
+  margin-left: 105px;
+}
+
+#post:hover .sub-post li {
+  padding-top: 10px;
+}
+
+.sub-elements {
+  display: none;
+}
+
+.bar ul li:hover .sub-elements {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-top: 15px;
+  margin-left: -40px;
+}
+
+.bar ul li:hover .sub-elements ul {
+  display: block;
+  margin: 10px;
+}
+
+.bar ul li:hover .sub-elements li {
+  padding-top: 10px;
+}
+
+.sub-classic {
+  display: none;
+}
+
+#clasic:hover .sub-classic {
+  display: block;
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  margin-top: -40px;
+  margin-left: 125px;
+}
+
+#clasic:hover .sub-classic li {
+  padding-top: 10px;
+}
+
+.sub-info {
+  display: none;
+}
+
+#info:hover .sub-info {
+  display: block;
+  width: 220px;
+  position: absolute;
+  background-color: white;
+  margin-top: -40px;
+  margin-left: 125px;
+}
+
+#info:hover .sub-info li {
+  padding-top: 10px;
+}
+
+.sub-inter {
+  display: none;
+}
+
+#inter:hover .sub-inter {
+  display: block;
+  position: absolute;
+  width: 195px;
+  background-color: white;
+  margin-top: -40px;
+  margin-left: 125px;
+}
+
+#inter:hover .sub-inter li {
+  padding-top: 10px;
+}
+
+.sub-typography {
+  display: none;
+}
+
+#typo:hover .sub-typography {
+  display: block;
+  position: absolute;
+  width: 195px;
+  background-color: white;
+  margin-top: -40px;
+  margin-left: 125px;
+}
+
+#typo:hover .sub-typography li {
+  padding-top: 10px;
+}
+
+.slider {
+  background-color: red;
+  height: 600px;
+  width: 100%;
+}
+
+.flowers ul {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  gap: 40px;
+}
+
+.flowers li {
+  list-style-type: none;
+}
+
+.flowers a {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -130px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  margin: 5px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  width: 245px;
+  height: 316.13;
+}
+
+.card p {
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */

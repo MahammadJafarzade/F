@@ -1,0 +1,39 @@
+  <ul>
+                                <h3>Product Types</h3>
+                                <li><a href="#">Standart Product</a></li>
+                                <li><a href="#">Grouped Product</a></li>
+                                <li><a href="#">Variable Product</a></li>
+                                <li><a href="#">Virtual Product</a></li>
+                                <li><a href="#">External Product</a></li>
+                                <li><a href="#">Downloadable Products</a></li>
+                                <li><a href="#">On Sale Product</a></li>
+                                <li><a href="#">Out Of Stock Product</a></li>
+                                <li><a href="#">New Product</a></li>
+                            </ul>
+                            <ul>
+                                <h3>Shop Pages</h3>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Downloads</a></li>
+                            </ul>
+                            <ul>
+                                <h3>Shop Types</h3>
+                                <li><a href="#">Product List</a></li>
+                                <li><a href="#">Without Sidebar</a></li>
+                                <li><a href="#">With Category Filter</a></li>
+                                <li><a href="#">With Ordering Filter</a></li>
+                                <li><a href="#">Shop Carousel</a></li>
+                                <li><a href="#">Product Categories</a></li>
+                                <li><a href="#">Single Category</a></li>
+                            </ul>
+                            <ul>
+                                <h3>Shop Layout</h3>
+                                <li><a href="#">Two Columns Grid List</a></li>
+                                <li><a href="#">Three Columns Grid List</a></li>
+                                <li><a href="#">Four Columns Grid List</a></li>
+                                <li><a href="#">Four Columns Grid List</a></li>
+                                <li><a href="#">Five Columns Grid List</a></li>
+                                <li><a href="#">Six Columns Grid List</a></li>
+                            </ul>
